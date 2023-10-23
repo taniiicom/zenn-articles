@@ -3,7 +3,7 @@ title: "Nextjs v13 (app router) に Supabase Auth を導入して認証から認
 emoji: "🔖"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["nextjs", "react", "supabase"]
-published: flase
+published: true
 ---
 
 既存の Nextjs v13 (app router/TS) プロジェクトに Supabase Auth を導入します
