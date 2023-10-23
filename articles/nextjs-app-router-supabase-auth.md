@@ -3,7 +3,7 @@ title: "Nextjs v13 (app router) に Supabase Auth を導入して認証から認
 emoji: "🔖"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["nextjs", "react", "supabase"]
-published: false
+published: flase
 ---
 
 既存の Nextjs v13 (app router/TS) プロジェクトに Supabase Auth を導入します
@@ -578,9 +578,11 @@ export default function Login() {
 
 繰り返しですが, 認可自体は, 基本的に DB 側で行うことで Supabase Auth を使うメリットを最大限享受することできます. RLS のポリシーは忘れずに適切に設定する必要があります.
 
+## epilogue
+
 今は, 旅に関するアプリを開発しています.
 
-引き続き, 新しい技術を勉強しながら開発していきます!
+個人的には, 技術の進化は, 「パフォーマンスが向上する」というのももちろんそうですが, ソフトウェア構成論やソフトウェア設計論といった, より人が親やすくて分かりやすく複雑なものを創り上げていくにはどうすればいいかという工夫が生まれていくのが面白いですね.
 
 https://twitter.com/taniiicom/status/1713416755526373599
 
