@@ -3,7 +3,7 @@ title: "C++ で React みたいな心地で関数型で TUI(ターミナル CUI)
 emoji: "🫧"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["cpp", "tui", "cui", "react"]
-published: false
+published: true
 ---
 
 大学のネットワークプロトコルの授業で, cpp を用いてソケット通信で掲示板を server, client それぞれ作る課題が出たので, ただ要件に従って実装するのもつまらないので, ターミナル上での操作を TUI でメニュー選択や入力をできるようにしたいなと思って, [github topics](https://github.com/topics/tui?l=c%2B%2B) を漁ってたら, gif アニメーションで良さそうな UI が目に留まった, FTXUI を見つけたので使ってみます.
