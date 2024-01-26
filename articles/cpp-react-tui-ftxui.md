@@ -18,7 +18,7 @@ FTXUI は, 現在 Star 数 5.7k ですが, 日本語の情報はほぼなさそ�
 
 ↓ 実装例はこちら
 
-[https://github.com/taniiicom/clich](https://github.com/taniiicom/clich)
+https://github.com/taniiicom/clich
 
 ↓ こんな感じです
 
@@ -30,7 +30,7 @@ FTXUI は, 現在 Star 数 5.7k ですが, 日本語の情報はほぼなさそ�
 
 ### FTXUI
 
-[GitHub - ArthurSonzogni/FTXUI: :computer: C++ Functional Terminal User Interface. :heart:](https://github.com/ArthurSonzogni/FTXUI)
+https://github.com/ArthurSonzogni/FTXUI
 
 cpp 向けのクロスプラットフォームの TUI (terminal based user interfaces) ライブラリ
 
@@ -127,11 +127,11 @@ $ cmake --build build
 
 ↓ 公式の README.md の Short gallery に, 主要な Component が載っており, そこからドキュメントに飛ぶことで実装を確認できます.
 
-[GitHub - ArthurSonzogni/FTXUI: :computer: C++ Functional Terminal User Interface. :heart:](https://github.com/ArthurSonzogni/FTXUI?tab=readme-ov-file#short-gallery)
+https://github.com/ArthurSonzogni/FTXUI?tab=readme-ov-file#short-gallery
 
 ↓ 公式ドキュメントはこちら
 
-[FTXUI: Main Page](https://arthursonzogni.github.io/FTXUI/index.html)
+https://arthursonzogni.github.io/FTXUI/index.html
 
 今回は, `clich.cpp` というファイル名にしています.
 
@@ -359,7 +359,7 @@ option.multiline = false;
 
 日本語の情報は, 調べた限りなかったので, ほぼゼロだと思いますが, ドキュメントが充実しているので困ることはそんなに多くないかなと思います.
 
-[FTXUI: Main Page](https://arthursonzogni.github.io/FTXUI/index.html)
+https://arthursonzogni.github.io/FTXUI/index.html
 
 ![3.gif](/images/cpp-react-tui-ftxui/3.gif)
 
@@ -369,16 +369,16 @@ option.multiline = false;
 
 面倒なことも, ちょっとした遊び心をひとつまみ加えることで, 前向きに楽しんで取り組めるようになったらいいなと思います (自戒)
 
-[https://x.com/taniiicom/status/1750793702854078611?s=20](https://x.com/taniiicom/status/1750793702854078611?s=20)
+https://x.com/taniiicom/status/1750793702854078611
 
 ### links
 
 実装例
 
-[https://github.com/taniiicom/clich](https://github.com/taniiicom/clich)
+https://github.com/taniiicom/clich
 
 cf.
 
-[FTXUI: Main Page](https://arthursonzogni.github.io/FTXUI/index.html)
+https://arthursonzogni.github.io/FTXUI/index.html
 
-[GitHub - ArthurSonzogni/FTXUI: :computer: C++ Functional Terminal User Interface. :heart:](https://github.com/ArthurSonzogni/FTXUI)
+https://github.com/ArthurSonzogni/FTXUI
