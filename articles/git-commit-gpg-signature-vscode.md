@@ -3,7 +3,7 @@ title: "VScode 上での Git の GUI 操作でもコミットへの GPG 署名�
 emoji: "🔏"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["git", "github", "gpg", "gnupg", "vscode"]
-published: false
+published: true
 ---
 
 コミットメッセージが複数行書きやすかったり, 最近だとコミットメッセージ書く時に Copilot のアシストが効くので, 開発の時は git commit を VScode のサイドバー (左パネル) の Git (Source Control) を使って GUI ですることが多いのですが, コミットに GPG 署名をつける方法が一癖あり, 調べても全然情報がなかったので, 残しておきます.
