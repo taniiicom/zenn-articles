@@ -23,7 +23,7 @@ GPG key を生成し, 署名を有効にする方法については, 以下の�
 
 cf.
 
-[https://qiita.com/noraworld/items/43cd1dd8c28931a766c1](https://qiita.com/noraworld/items/43cd1dd8c28931a766c1)
+https://qiita.com/noraworld/items/43cd1dd8c28931a766c1
 
 mac の場合の gpg インストールは, brew で簡単にできます
 
@@ -33,7 +33,7 @@ brew install gpg
 
 cf.
 
-[https://keruu.netlify.app/875efc6dd03473e3e5b2bffd7df9d3f3/](https://keruu.netlify.app/875efc6dd03473e3e5b2bffd7df9d3f3/)
+https://keruu.netlify.app/875efc6dd03473e3e5b2bffd7df9d3f3/
 
 ## VScode の Git 拡張の GUI 上で署名付きコミットをする
 
@@ -61,9 +61,9 @@ export GPG_TTY=$(tty)
 
 ついでに, 毎回 passphrase を入力するのも面倒なので, この拡張機能には, passphrase をキャッシュする機能があり非常に便利です.
 
-[https://marketplace.visualstudio.com/items?itemName=wdhongtw.gpg-indicator](https://marketplace.visualstudio.com/items?itemName=wdhongtw.gpg-indicator)
+https://marketplace.visualstudio.com/items?itemName=wdhongtw.gpg-indicator
 
-[https://github.com/wdhongtw/vscode-gpg-indicator](https://github.com/wdhongtw/vscode-gpg-indicator)
+https://github.com/wdhongtw/vscode-gpg-indicator
 
 インストール後, VScode の下部に, 鍵のアイコンが追加されるので, それをクリックします.
 
@@ -85,4 +85,4 @@ export GPG_TTY=$(tty)
 
 その中で, サーバインスタンスの連絡用メールアドレスを取得され悪用されるといった被害もあり, 多くの鯖缶が被害を受けたのですが, 私のサーバも被害を受けました.
 
-この件, commit の署名もそうですが, `Verified` とついてなくても, その人のアイコンや名前が表示されていたら, その人がしたものと信じて疑わないことになりがちですが, 常に本当にそうなのかと立ち止まって考えるように, 情報セキュリティは, 発信者だけでなく, 受け手側の意識も大事だなと思ったりしました.
+この件, commit の署名もそうですが, `Verified` とついてなくても, その人のアイコンや名前が表示されていたら, その人がしたものと信じて疑わないことになりがちですが, 常に本当にそうなのかと立ち止まって考えるように, 情報セキュリティを成立させるには, 発信者だけでなく, 受け手側の意識もすごく大事だなと思ったりしました.
