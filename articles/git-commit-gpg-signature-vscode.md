@@ -1,6 +1,6 @@
 ---
 title: "VScode 上での Git の GUI 操作でもコミットへの GPG 署名を可能にする"
-emoji: "🔏"
+emoji: "✍️"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["git", "github", "gpg", "gnupg", "vscode"]
 published: true
