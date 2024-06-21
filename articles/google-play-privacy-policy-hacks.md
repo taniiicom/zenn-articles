@@ -3,7 +3,7 @@ title: "App Store/Google Playに公開するアプリに必要なプライバシ
 emoji: "💝"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [appstore, googleplay, chatgpt, ios, android]
-published: false
+published: true
 ---
 
 厳格化されている App Store/Google Play のプライバシーに関する制約を逆手に取って, プライバシーポリシを生成するハックを紹介します.
