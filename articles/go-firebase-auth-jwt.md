@@ -1,5 +1,5 @@
 ---
-title: "Go (Echo) サーバで Firebase Auth 由来の JWT の認可ミドルウェアを作る"
+title: "Go (Echo) サーバで Firebase Auth 由来の JWT の認可ミドルウェアをぱぱっと作る"
 emoji: "🫥"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [go, firebase, firebaseauth, jwt, echo]
