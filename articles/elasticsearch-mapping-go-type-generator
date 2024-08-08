@@ -1,0 +1,147 @@
+QA に間に合わせることができなかった反省から, このままじゃ終われないなということで, 調査の結果最終的な原因だった, システムごとに異なるデータモデルの表現方法を, 同じミスが起こらないように自動生成できるようにしよう. そこまでが, 自分の責任だという思いで, 今回は, Elasticsearch mapping json 定義から, Go の elasticsearchmodel 構造体を自動生成する package を作ったお話です.  
+
+```
+package main
+
+import (
+	"bytes"
+	"encoding/json"
+	"flag"
+	"fmt"
+	"io/ioutil"
+	"log"
+	"os"
+	"path/filepath"
+	"strings"
+	"text/template"
+)
+
+type Property struct {
+	Type string `json:"type"`
+}
+
+type Mappings struct {
+	Properties map[string]Property `json:"properties"`
+}
+
+type ElasticsearchMapping struct {
+	Mappings Mappings `json:"mappings"`
+}
+
+const structTemplate = `
+package searchmodel
+
+type ArtistFeatureValueNewDocJson struct {
+	ArtistFeatureValueDocJson
+}
+
+type ArtistFeatureValueDocJson struct {
+{{range .}}
+	{{.FieldName}} {{.FieldType}} ` + "`json:\"{{.JSONName}}\"`" + `
+{{end}}
+}
+`
+
+type Field struct {
+	FieldName string
+	FieldType string
+	JSONName  string
+}
+
+func main() {
+	dir := flag.String("dir", ".", "Directory containing JSON schema files")
+	flag.Parse()
+
+	files, err := ioutil.ReadDir(*dir)
+	if err != nil {
+		log.Fatalf("Failed to read directory: %v", err)
+	}
+
+	for _, file := range files {
+		if filepath.Ext(file.Name()) == ".json" {
+			filePath := filepath.Join(*dir, file.Name())
+			processFile(filePath)
+		}
+	}
+}
+
+func processFile(filePath string) {
+	data, err := ioutil.ReadFile(filePath)
+	if err != nil {
+		log.Fatalf("Failed to read file %s: %v", filePath, err)
+	}
+
+	var esMapping ElasticsearchMapping
+	err = json.Unmarshal(data, &esMapping)
+	if err != nil {
+		log.Fatalf("Error unmarshalling JSON from file %s: %v", filePath, err)
+	}
+
+	fields := []Field{}
+	for name, prop := range esMapping.Mappings.Properties {
+		fieldType := mapElasticsearchTypeToGoType(prop.Type)
+		fields = append(fields, Field{
+			FieldName: toCamelCase(name),
+			FieldType: fieldType,
+			JSONName:  name,
+		})
+	}
+
+	tmpl, err := template.New("struct").Parse(structTemplate)
+	if err != nil {
+		log.Fatalf("Error parsing template: %v", err)
+	}
+
+	var buf bytes.Buffer
+	err = tmpl.Execute(&buf, fields)
+	if err != nil {
+		log.Fatalf("Error executing template: %v", err)
+	}
+
+	outputFileName := strings.TrimSuffix(filepath.Base(filePath), filepath.Ext(filePath)) + ".go"
+	outputFilePath := filepath.Join(filepath.Dir(filePath), outputFileName)
+	err = ioutil.WriteFile(outputFilePath, buf.Bytes(), 0644)
+	if err != nil {
+		log.Fatalf("Failed to write output file %s: %v", outputFilePath, err)
+	}
+
+	fmt.Printf("Generated Go struct for %s\n", filePath)
+}
+
+func mapElasticsearchTypeToGoType(esType string) string {
+	switch esType {
+	case "integer":
+		return "*uint64"
+	case "float":
+		return "*float64"
+	case "boolean":
+		return "bool"
+	case "text", "keyword":
+		return "*string"
+	case "date":
+		return "*time.Time"
+	case "geo_point":
+		return "*GeoPoint"
+	case "object":
+		return "*map[string]interface{}"
+	case "nested":
+		return "[]interface{}"
+	default:
+		return "interface{}"
+	}
+}
+
+func toCamelCase(s string) string {
+	parts := strings.Split(s, "_")
+	for i, part := range parts {
+		parts[i] = strings.Title(part)
+	}
+	return strings.Join(parts, "")
+}
+
+// GeoPoint struct for handling geo_point type in Elasticsearch
+type GeoPoint struct {
+	Lat float64 `json:"lat"`
+	Lon float64 `json:"lon"`
+}
+```
