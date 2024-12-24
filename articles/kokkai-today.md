@@ -8,8 +8,6 @@ published: true
 
 [#国会 Today](https://kokkai.today) ([kokkai.today](https://kokkai.today)) の制作にこめた想いや技術的な解説を書いていきます.
 
-![](https://storage.googleapis.com/taniiicom/res/mov1.gif)
-
 \*\* gif アニメなのでカクついていますが実際はスムーズです.
 
 Google Developer Groups アドベントカレンダーの 24 日目の記事です.
