@@ -2,7 +2,7 @@
 title: "アニメーションで国会を可視化した個人開発がネットニュースになった話"
 emoji: "⛲️"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: []
+topics: [nextjs, react, animation, 可視化, framermotion, python, , 非同期処理, 個人開発]
 published: true
 ---
 
@@ -10,11 +10,11 @@ published: true
 
 ![](https://storage.googleapis.com/taniiicom/res/mov1.gif)
 
-[![GDGoC Japan Advent Calendar 2024 > 24 日目](/images/kokkai-today/gdgoc_advent_calender.png =250x)](https://qiita.com/advent-calendar/2024/gdgoc-japan)
-
 Google Developer Groups アドベントカレンダーの 24 日目の記事です.
 
-また, この記事は 12/30 に開催される冬コミ C105 のサークル合同紙に寄稿したものの前半部分です.
+また, この記事は 12/30 に開催される冬コミ C105 のサークル合同紙に寄稿したものの前半部分を元にしています.
+
+[![GDGoC Japan Advent Calendar 2024 > 24 日目](/images/kokkai-today/gdgoc_advent_calender.png =250x)](https://qiita.com/advent-calendar/2024/gdgoc-japan)
 
 ## ぼーっと眺めたくなるアプリ
 
