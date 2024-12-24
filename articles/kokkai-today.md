@@ -10,9 +10,7 @@ published: true
 
 ![](https://storage.googleapis.com/taniiicom/res/mov1.gif)
 
-![](/images/kokkai-today/gdgoc_advent_calender.png)
-
-[GDGoC Japan Advent Calendar 2024 > 24 日目](https://qiita.com/advent-calendar/2024/gdgoc-japan)
+[![GDGoC Japan Advent Calendar 2024 > 24 日目](/images/kokkai-today/gdgoc_advent_calender.png =250x)](https://qiita.com/advent-calendar/2024/gdgoc-japan)
 
 Google Developer Groups アドベントカレンダーの 24 日目の記事です.
 
