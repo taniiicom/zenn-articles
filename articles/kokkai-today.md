@@ -2,7 +2,8 @@
 title: "アニメーションで国会を可視化した個人開発がネットニュースになった話"
 emoji: "⛲️"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: [nextjs, react, animation, 可視化, framermotion, python, , 非同期処理, 個人開発]
+topics:
+  [nextjs, react, animation, 可視化, framermotion, python, 非同期処理, 個人開発]
 published: true
 ---
 
