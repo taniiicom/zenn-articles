@@ -10,9 +10,9 @@ published: true
 
 ![](https://storage.googleapis.com/taniiicom/res/mov1.gif)
 
-<a href="https://qiita.com/advent-calendar/2024/gdgoc-japan">
-<img src="/images/kokkai-today/gdgoc_advent_calender.png" alt="GDGoC Japan Advent Calendar 2024 > 24 日目" />
-</a>
+![](/images/kokkai-today/gdgoc_advent_calender.png)
+
+[GDGoC Japan Advent Calendar 2024 > 24 日目](https://qiita.com/advent-calendar/2024/gdgoc-japan)
 
 Google Developer Groups アドベントカレンダーの 24 日目の記事です.
 
@@ -36,10 +36,9 @@ Twitter のタイムライン, Flightradar24 の飛行機の動き, Windy.com �
 
 ![](/images/kokkai-today/img4.png)
 
-<p>
-  <img src="/images/kokkai-today/img5.png" alt="" width="47%">
-  <img src="/images/kokkai-today/img6.png" alt="" width="47%">
-</p>
+![](/images/kokkai-today/img5.png)
+
+![](/images/kokkai-today/img6.png)
 
 国会図書館の国会議事録 API, 衆議院インターネット審議中継, 参議院インターネット審議中継の 3 つのデータソースから取得した, 1 日の国会の全発言を形態素解析, キーワード抽出し, 言葉が湧き出る泉のようなアニメーションで可視化しています.
 
