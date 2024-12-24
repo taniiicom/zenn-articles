@@ -2,14 +2,15 @@
 title: "アニメーションで国会を可視化した個人開発がネットニュースになった話"
 emoji: "⛲️"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics:
-  [nextjs, react, animation, 可視化, framermotion, python, 非同期処理, 個人開発]
+topics: [react, animation, 可視化, framermotion, 個人開発]
 published: true
 ---
 
 [#国会 Today](https://kokkai.today) ([kokkai.today](https://kokkai.today)) の制作にこめた想いや技術的な解説を書いていきます.
 
 ![](https://storage.googleapis.com/taniiicom/res/mov1.gif)
+
+\*\* gif アニメなのでカクついていますが実際はスムーズです.
 
 Google Developer Groups アドベントカレンダーの 24 日目の記事です.
 
