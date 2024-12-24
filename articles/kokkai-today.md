@@ -34,6 +34,8 @@ Twitter のタイムライン, Flightradar24 の飛行機の動き, Windy.com �
 
 <!-- ![](images/mov1.gif) -->
 
+https://youtu.be/XdKDo8G4Wng
+
 ![](/images/kokkai-today/img4.png)
 
 ![](/images/kokkai-today/img5.png)
