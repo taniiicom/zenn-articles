@@ -3,7 +3,7 @@ title: "アニメーションで国会を可視化した個人開発がネット
 emoji: "⛲️"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: []
-published: false
+published: true
 ---
 
 [#国会 Today](https://kokkai.today) ([kokkai.today](https://kokkai.today)) の制作にこめた想いや技術的な解説を書いていきます.
